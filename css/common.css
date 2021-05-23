@@ -12,7 +12,7 @@ body{
     display: flex;
     align-items: center;
     background:#994c20;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
 }
 .image_area{
@@ -27,6 +27,9 @@ body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
 }
+.phone-menu{
+    display: none;
+}
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
 
@@ -34,32 +37,106 @@ body{
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 #wrapper {
     margin: 0 auto;
-    display: flex;
     flex-wrap: wrap;
-    height: 100%;
-}
-/* 左コンテンツ */
-.left-column {
-    width: 20%;
-    height: 100%;
-    background-color: #994c20d1;
-    border-top: 1px solid #fff;
+    display: inline-block;
     margin-top: 60px;
+    height: 100%;
+    width: 100%;
 }
-/* 右コンテンツ */
-.right-column {
-    width: 80%;
+.main_content{
+    display: flex;
+    justify-content: center;
+    width: 89%;
+    margin: 0 auto;
+}
+.gridWrapper{
+    clear:both;
+    padding:20px 0;
+    overflow:hidden;
+    width: 100%;
+}
+        
+.grid{
+    float:left;
+}
+    
+.colDark,.colLight{
+    padding-bottom:10px;
+    color:#535353;
+    background:white;
+    width: 100%;
+    display: inline-block;
+    margin: 15px 0px;
+    border-bottom:1px solid#5d5d5d;
+}
+    
+    
+.colDark h3,.colLight h3{
+    margin:10px 10px 5px;
+    font-size:14px;
+    border-bottom:1px solid #fff;
+}
+    
+.colDark a,.colLight a{
+    display:block;
+    color:#994c20;
+}
+    
+.colDark a:hover,.colLight a:hover{
+    color:#994c207d;
+}
+
+.grid p{
+    padding:5px 10px;
+    text-align: right;
+    margin: 0px;
+}
+.grid .content_body{
+    text-align: left;
+}
+
+.grid ul{margin:5px 10px;}
+
+.grid li{
+    padding:5px 0;
+    list-style:inside;
+    border-bottom:1px dashed #ebebeb;
+}
+
+.gridWrapper img{
+    max-width:100%;
+}
+.main_content_row{
+    display: flex;
+}
+.right{
+    float: right;
+    width: 75%;
     height: 100%;
 }
+.left{
+    float: left;
+    width: 225px;
+    height: 100%;
+    
+}
+
   /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
 /* レスポンシブスマホ */
+@media screen and (max-width: 865px) {
+
+}
 @media screen and (max-width: 480px) {
 	/* 480px以下に適用されるCSS（スマホ用） */
 
     .header-name{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 13px;
+        display: none;
+    }
+    .phone-menu{
+        display: block;
     }
     .header_icon{
         height:60px;
@@ -72,14 +149,21 @@ body{
     #wrapper{
         display: block;
     }
-    /* 左コンテンツ */
-    .left-column {
-        width: 100%;
-        height: 15%;
-        margin: 10px 0px;
+    .right{
+        float: none;
+        width: auto;
+        height: auto;
     }
-    /* 右コンテンツ */
-    .right-column {
-        width: 100%;
+    .left{
+        float: none;
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .main_content_row{
+        display: block;
+        height:auto;
     }
 }
