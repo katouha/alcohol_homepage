@@ -8,12 +8,15 @@ body{
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
 .header{
-    height: 60px;
+    height: 75px;
     display: flex;
     align-items: center;
     background:#1d3297;
     /* position: fixed; */
     width: 100%;
+}
+.header_content{
+    margin-left:10px;
 }
 .image_area{
     width: 20%;
@@ -32,6 +35,9 @@ body{
     width: 80%;
     /* justify-content: center; */
     align-items: center;
+}
+.instagram_icon_text{
+    margin-bottom: 10px;
 }
 .phone-menu{
     display: none;
@@ -52,7 +58,7 @@ body{
     margin: 0 auto;
     flex-wrap: wrap;
     display: inline-block;
-    margin-top: 60px;
+    margin-top: 50px;
     height: 100%;
     width: 100%;
 }
@@ -60,6 +66,24 @@ body{
     justify-content: center;
     width: 89%;
     margin: 0 auto;
+}
+.alcohol_introduction_area{
+    margin-bottom: 30px;
+}
+.alcohol_introduction_area_media{
+    display: none;
+    margin-bottom: 30px;
+}
+.pc_animetion_btn_area{
+    font-weight: bold;
+    font-size: 18px;
+}
+.pc_animetion_btn{
+    border: 1.5px dashed #646464;
+    border-radius: 20px;
+    padding: 30px 60px;
+    display: inline-block;
+
 }
 .gridWrapper{
     clear:both;
@@ -131,6 +155,58 @@ body{
     width: 225px;
     height: 100%;
 }
+.animation_btn_media{
+    display: grid;
+    margin: 10px 0px;
+}
+.animation_btn_media span {
+    color: #fff;
+    font-size: 12px;
+    background: #1d3297d6;;
+    padding: 10px 15px;
+}
+.pc_animetion_btn_media{
+    border: 1.5px dashed #646464;
+    border-radius: 20px;
+    padding: 10px 25px;
+    display: block;
+}
+/* アニメーションボタン */
+.animation_btn {
+    display: inline-block;
+    transition: .3s;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+.animation_btn span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background: #1d3297d6;;
+    padding: 18px 30px;
+    display: inline-block;
+    position: relative;
+    transform-origin: 50% 0%;
+    transform-style: preserve-3d;
+    transition: .4s;
+}
+ .animation_btn span:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: attr(data-text);
+    padding: 18px 30px;
+    background-color: #333;
+    width: 100%;
+    display: inline-block;
+    transform-origin: 50% 0%;
+    transform: translate3d(0, 100%, 0) rotateX(-90deg);
+ }
+  .animation_btn:hover span {
+    transform: translate3d(0, 0, -60px) rotateX(90deg);
+}
 
   /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
@@ -152,13 +228,64 @@ body{
     .phone-menu{
         display: block;
     }
+    .image_area{
+        display: none;
+    }
+    .header_title{
+        width: 100%;
+        padding: 0px 10px;
+        height: 100%;
+    }
+    .header_content{
+        margin-left: 0px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border-right: 1px solid white;
+    }
     .header_icon{
         height:60px;
         width: 60px;
         margin-left: 5px;
     }
     .header{
-        height: 70px;
+        height: 60px;
+    }
+    .alcohol_introduction_area{
+        display:none;
+    }
+    .alcohol_introduction_area_media{
+        display: block;
+    }
+    .pc_animetion_btn {
+        padding: 20px 15px;
+    }
+    .pc_animetion_btn_area {
+        font-size: 15px;
+    }
+    .mail{
+        width: 35%;
+    }
+    .mail_area{
+        height: 100%;
+        width: 100%;
+        align-items: center;
+    }
+    .mail_icon{
+        width: 20px;
+    }
+    .mail_icon_text{
+        font-size: 12px;
+    }
+    .instagram{
+        width: 35%;
+    }
+    .instagram_icon{
+        width: 35px;
+    }
+    .instagram_icon_text{
+        font-size: 12px;
+        margin-bottom: 0px;
     }
     #wrapper{
         display: block;
@@ -224,3 +351,4 @@ body{
 .sect02{overflow: hidden;} /*横スクロールバーを隠す*/
 .slide-right {transform: translateX(500px);}
 .slide-left {transform: translateX(-500px);}
+
