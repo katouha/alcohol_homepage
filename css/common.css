@@ -27,6 +27,12 @@ body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
 }
+.header_title{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
 .phone-menu{
     display: none;
 }
@@ -44,7 +50,6 @@ body{
     width: 100%;
 }
 .main_content{
-    display: flex;
     justify-content: center;
     width: 89%;
     margin: 0 auto;
@@ -118,7 +123,12 @@ body{
     float: left;
     width: 225px;
     height: 100%;
-    
+}
+.fadein{
+    transition: 1.3s ease-in-out ;
+}
+.fadein2{
+    transition: 1.3s ease-in-out ;
 }
 
   /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
@@ -130,6 +140,9 @@ body{
 @media screen and (max-width: 480px) {
 	/* 480px以下に適用されるCSS（スマホ用） */
 
+    h2{
+        font-size: 16px;
+    }
     .header-name{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 13px;
@@ -165,5 +178,18 @@ body{
     .main_content_row{
         display: block;
         height:auto;
+    }
+    .grid .content_body{
+        text-align: left;
+        font-size: 12px;
+    }
+    .colLight a {
+        font-size: 12px;
+    }
+    .fadein{
+        transition: 0.7s ease-in-out ;
+    }
+    .fadein2{
+        transition: 0.7s ease-in-out ;
     }
 }
