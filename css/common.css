@@ -1,0 +1,84 @@
+html,body{
+    height: 100%;
+}
+body{
+    margin:0px;
+}
+/* ヘッダー */
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background:#994c20;
+    /* position: fixed; */
+    width: 100%;
+}
+.image_area{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #fff;
+    height: 100%;
+}
+.header-name{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+
+/* ヘッダ、フッタ以外 */
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+#wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+/* 左コンテンツ */
+.left-column {
+    width: 20%;
+    height: 100%;
+    background-color: #994c20d1;
+    border-top: 1px solid #fff;
+}
+/* 右コンテンツ */
+.right-column {
+    width: 80%;
+    height: 100%;
+}
+  /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+/* レスポンシブスマホ */
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+
+    .header-name{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 13px;
+    }
+    .header_icon{
+        height:60px;
+        width: 60px;
+        margin-left: 5px;
+    }
+    .header{
+        height: 70px;
+    }
+    #wrapper{
+        display: block;
+    }
+    /* 左コンテンツ */
+    .left-column {
+        width: 100%;
+        height: 15%;
+        margin: 10px 0px;
+    }
+    /* 右コンテンツ */
+    .right-column {
+        width: 100%;
+    }
+}
