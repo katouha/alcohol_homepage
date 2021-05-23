@@ -52,170 +52,13 @@ body{
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
 
-/* ヘッダ、フッタ以外 */
-/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
-#wrapper {
-    margin: 0 auto;
-    flex-wrap: wrap;
-    display: inline-block;
-    margin-top: 50px;
-    height: 100%;
-    width: 100%;
-}
-.main_content{
-    justify-content: center;
-    width: 89%;
-    margin: 0 auto;
-}
-.alcohol_introduction_area{
-    margin-bottom: 30px;
-}
-.alcohol_introduction_area_media{
-    display: none;
-    margin-bottom: 30px;
-}
-.pc_animetion_btn_area{
-    font-weight: bold;
-    font-size: 18px;
-}
-.pc_animetion_btn{
-    border: 1.5px dashed #646464;
-    border-radius: 20px;
-    padding: 30px 60px;
-    display: inline-block;
-
-}
-.gridWrapper{
-    clear:both;
-    padding:20px 0;
-    overflow:hidden;
-    width: 100%;
-}
-        
-.grid{
-    float:left;
-}
-    
-.colDark,.colLight{
-    padding-bottom:10px;
-    color:#535353;
-    background:white;
-    width: 100%;
-    display: inline-block;
-    margin: 15px 0px;
-    border-bottom:1px solid#5d5d5d;
-}
-    
-    
-.colDark h3,.colLight h3{
-    margin:10px 10px 5px;
-    font-size:14px;
-    border-bottom:1px solid #fff;
-}
-    
-.colDark a,.colLight a{
-    display:block;
-    color:#994c20;
-}
-    
-.colDark a:hover,.colLight a:hover{
-    color:#994c207d;
-}
-
-.grid p{
-    padding:5px 10px;
-    text-align: right;
-    margin: 0px;
-}
-.grid .content_body{
-    text-align: left;
-}
-
-.grid ul{margin:5px 10px;}
-
-.grid li{
-    padding:5px 0;
-    list-style:inside;
-    border-bottom:1px dashed #ebebeb;
-}
-
-.gridWrapper img{
-    max-width:100%;
-}
-.main_content_row{
-    display: flex;
-}
-.right{
-    float: right;
-    width: 75%;
-    height: 100%;
-}
-.left{
-    float: left;
-    width: 225px;
-    height: 100%;
-}
-.animation_btn_media{
-    display: grid;
-    margin: 10px 0px;
-}
-.animation_btn_media span {
-    color: #fff;
-    font-size: 12px;
-    background: #1d3297d6;;
-    padding: 10px 15px;
-}
-.pc_animetion_btn_media{
-    border: 1.5px dashed #646464;
-    border-radius: 20px;
-    padding: 10px 25px;
-    display: block;
-}
-/* アニメーションボタン */
-.animation_btn {
-    display: inline-block;
-    transition: .3s;
-    perspective: 1000px;
-    perspective-origin: 50% 50%;
-    vertical-align: bottom;
-    overflow: hidden;
-}
-.animation_btn span {
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    background: #1d3297d6;;
-    padding: 18px 30px;
-    display: inline-block;
-    position: relative;
-    transform-origin: 50% 0%;
-    transform-style: preserve-3d;
-    transition: .4s;
-}
- .animation_btn span:after {
-    position: absolute;
-    left: 0;
-    top: 0;
-    content: attr(data-text);
-    padding: 18px 30px;
-    background-color: #333;
-    width: 100%;
-    display: inline-block;
-    transform-origin: 50% 0%;
-    transform: translate3d(0, 100%, 0) rotateX(-90deg);
- }
-  .animation_btn:hover span {
-    transform: translate3d(0, 0, -60px) rotateX(90deg);
-}
-
-  /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
 /* レスポンシブスマホ */
 @media screen and (max-width: 865px) {
 
 }
 @media screen and (max-width: 480px) {
-	/* 480px以下に適用されるCSS（スマホ用） */
+	/* 480px以下に適用されるCSS（スマホ用）ヘッダスタイル */
 
     h2{
         font-size: 16px;
@@ -251,18 +94,6 @@ body{
     .header{
         height: 60px;
     }
-    .alcohol_introduction_area{
-        display:none;
-    }
-    .alcohol_introduction_area_media{
-        display: block;
-    }
-    .pc_animetion_btn {
-        padding: 20px 15px;
-    }
-    .pc_animetion_btn_area {
-        font-size: 15px;
-    }
     .mail{
         width: 35%;
     }
@@ -287,68 +118,4 @@ body{
         font-size: 12px;
         margin-bottom: 0px;
     }
-    #wrapper{
-        display: block;
-    }
-    .right{
-        float: none;
-        width: auto;
-        height: auto;
-    }
-    .left{
-        float: none;
-        width: auto;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
-        border: 1.3px dashed #ac590a82;
-        border-radius: 45px;
-    }
-    .main_content_row{
-        display: block;
-        height:auto;
-    }
-    .grid .content_body{
-        text-align: left;
-        font-size: 12px;
-    }
-    .colLight a {
-        font-size: 12px;
-    }
-    .fadein{
-        transition: 0.7s ease-in-out ;
-    }
-    .fadein2{
-        transition: 0.7s ease-in-out ;
-    }
 }
-
-
-	
-/*1.フェードインアニメーションの指定*/
-.fadein {opacity: 0;} /*一瞬表示されるのを防ぐ*/
-.fadeInDown {
-    animation-name: fadeInDown;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-@keyframes fadeInDown {
-    0% {
-        opacity: 0;         
-    }
-    100% {
-    opacity: 1;
-    transform: translate(0);
-    }
-}
- 
-/*2.上下の動きを指定*/
-.updown {transform: translateY(-100px);}
-.downup {transform: translateY(100px);}
- 
-/*3.左右の動きを指定*/
-.sect02{overflow: hidden;} /*横スクロールバーを隠す*/
-.slide-right {transform: translateX(500px);}
-.slide-left {transform: translateX(-500px);}
-
