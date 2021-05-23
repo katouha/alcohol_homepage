@@ -11,7 +11,7 @@ body{
     height: 60px;
     display: flex;
     align-items: center;
-    background:#994c20;
+    background:#1d3297;
     /* position: fixed; */
     width: 100%;
 }
@@ -30,11 +30,18 @@ body{
 .header_title{
     display: flex;
     width: 80%;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 .phone-menu{
     display: none;
+}
+.mail_area{
+    display: flex;
+    align-items: flex-end;
+    display: flex;
+    color: white;
+    font-size: 14px;
 }
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
