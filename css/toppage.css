@@ -44,13 +44,16 @@
 }
     
 .colDark,.colLight{
-    padding-bottom:10px;
+    padding: 20px 0px;
     color:#535353;
     background:white;
     width: 100%;
     display: inline-block;
-    margin: 15px 0px;
-    border-bottom:1px solid#5d5d5d;
+    /* margin: 15px 0px; */
+    border-bottom:1px solid #1d3297;
+}
+.colStart{
+    border-top:1px solid #1d3297;
 }
     
     
