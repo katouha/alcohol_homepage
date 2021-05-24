@@ -17,6 +17,10 @@ li{
     text-align: left;
 }
 
+.colDark,.colLight{
+    border-bottom:1px solid #1d3297;
+}
+
 /* レスポンシブスマホ */
 @media screen and (max-width: 480px) {
     #wrapper{
