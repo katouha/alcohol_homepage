@@ -18,6 +18,9 @@ li{
 
 /* レスポンシブスマホ */
 @media screen and (max-width: 480px) {
+    #wrapper{
+        display: flex;
+    }
     .main_title h1{
         font-size: 20px;
     }
