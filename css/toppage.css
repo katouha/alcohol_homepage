@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     display: inline-block;
     margin-top: 50px;
-    height: 100%;
+    height: auto;
     width: 100%;
 }
 .main_content{

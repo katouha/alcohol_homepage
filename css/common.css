@@ -49,14 +49,20 @@ body{
     color: white;
     font-size: 14px;
 }
+.footer{
+    background-color: #1d3297;
+    padding: 33px 30px;
+    color: white;
+}
+.footer_body{
+    font-size: 15px;
+    text-align: center;
+}
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
 
 
 /* レスポンシブスマホ */
-@media screen and (max-width: 865px) {
-
-}
 @media screen and (max-width: 480px) {
 	/* 480px以下に適用されるCSS（スマホ用）ヘッダスタイル */
 
@@ -117,5 +123,12 @@ body{
     .instagram_icon_text{
         font-size: 12px;
         margin-bottom: 0px;
+    }
+    .footer{
+        padding: 15px 30px;
+    }
+    .footer_body{
+        font-size: 10px;
+        text-align: center;
     }
 }

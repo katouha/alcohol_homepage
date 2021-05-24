@@ -18,8 +18,13 @@ $(function () {
 
     // 画面に入ってすぐのアニメーション
     // ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-    const wHeight = $(window).height();
-    const scrollAmount = $(window).scrollTop();
+    scrollTo(0, 10);
+    
+    // ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+
+    $(window).scroll(function () {
+        const wHeight = $(window).height();
+        const scrollAmount = $(window).scrollTop();
     if(deviceFlg == 3){
         $('.alcohol_introduction_area').each(function () {
             const targetPosition = $(this).offset().top;
@@ -36,12 +41,6 @@ $(function () {
             }
         });
     }
-    
-    // ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-
-    $(window).scroll(function () {
-        const wHeight = $(window).height();
-        const scrollAmount = $(window).scrollTop();
         $('.fadein,.fadein2').each(function () {
             const targetPosition = $(this).offset().top;
             if(scrollAmount > targetPosition - wHeight + 60) {
