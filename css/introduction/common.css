@@ -45,4 +45,7 @@ li{
     .grid .border_area_body {
         font-size: 12px;
     }
+    .recipe_block{
+        display: block;
+    }
 }
