@@ -15,12 +15,19 @@ li{
 
 .grid .border_area_body{
     text-align: left;
+
 }
 
 .colDark,.colLight{
     border-bottom:1px solid #1d3297;
 }
-
+.return_top{
+    display: flex;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
 /* レスポンシブスマホ */
 @media screen and (max-width: 480px) {
     #wrapper{
@@ -43,9 +50,63 @@ li{
         font-size: 13px;
     }
     .grid .border_area_body {
-        font-size: 12px;
+        font-size: 13px;
     }
     .recipe_block{
         display: block;
     }
+    .grid .content_body {
+        font-size: 13px;
+    }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.swiggleBox{
+  width: 130px;
+  height: 65px;
+  margin: 15px auto;
+  color: #4274D3;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.15rem;
+  line-height: 65px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 45px;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+svg rect, svg path, svg polyline {
+  fill: none;
+  stroke: #4274D3;
+  stroke-width: 1;
+}
+
+.swiggleBox:hover svg path {
+  stroke: #4274D3;
+}
+
+/* Swiggle Box */
+svg path {
+  stroke-dasharray: 265, 0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+.swiggleBox:hover svg path {
+  stroke-width: 3;
+  stroke-dasharray: 0, 350;
+  stroke-dashoffset: 20;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
