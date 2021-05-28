@@ -1,3 +1,7 @@
 #wrapper{
     height: 80%;
+    padding: 0px;
+}
+.main_content{
+    padding: 10px 17px;
 }

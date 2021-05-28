@@ -1,3 +1,6 @@
+#wrapper{
+    height: 80%;
+}
 .article_left{
     float: left;
     width: 22%;
@@ -157,9 +160,6 @@
         position: absolute;
         width: 89%;
         height: 10%;
-    }
-    #wrapper{
-        height: 77%;
     }
     .footer{
         margin-top: 0px;
