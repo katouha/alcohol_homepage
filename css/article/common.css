@@ -65,6 +65,10 @@
     width: 840px;
     margin: 0px auto;
 }
+.article_title{
+    display: inline-block; 
+    margin-right: 5px;
+}
 
 .button-holder div a {
     text-decoration: none;
