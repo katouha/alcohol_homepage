@@ -44,6 +44,9 @@
 .button-holder{
     width: 100px;
 }
+.article_transition{
+    display: none;
+}
   
 .button-holder > div > div, .button-holder > div > a {
     float: left;
@@ -144,5 +147,11 @@
     }
     .main_content {
         width: 93%;
+    }
+    .article_transition{
+        display: block;
+        position: absolute;
+        width: 89%;
+        height: 12%;
     }
 }
