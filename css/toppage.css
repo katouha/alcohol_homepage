@@ -1,19 +1,7 @@
 
 /* ヘッダ、フッタ以外 */
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
-#wrapper {
-    margin: 0 auto;
-    flex-wrap: wrap;
-    display: inline-block;
-    margin-top: 50px;
-    height: auto;
-    width: 100%;
-}
-.main_content{
-    justify-content: center;
-    width: 89%;
-    margin: 0 auto;
-}
+
 .alcohol_introduction_area{
     margin-bottom: 30px;
 }
