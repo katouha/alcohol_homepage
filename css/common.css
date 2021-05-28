@@ -54,6 +54,8 @@ body{
     padding: 33px 30px;
     color: white;
     margin-top: 5rem;
+    /* position: absolute;
+    bottom: 0px; */
 }
 .footer_body{
     font-size: 15px;
