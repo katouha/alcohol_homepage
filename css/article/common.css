@@ -157,4 +157,7 @@
     #wrapper{
         height: 100%;
     }
+    .footer{
+        margin-top: 0px;
+    }
 }
