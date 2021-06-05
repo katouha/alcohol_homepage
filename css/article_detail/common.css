@@ -1,12 +1,14 @@
 #wrapper{
-    height: 87%;
+    height: auto;
     padding: 0px;
 }
 .main_content{
-    padding: 10px 0px;
+    padding: 30px 0px;
 }
 .title_block{
-    margin-bottom: 15px;
+    margin-bottom: 4rem;
+    width: 75%;
+    letter-spacing: 1px;
 }
 .article_title {
     margin-bottom: 30px;
@@ -18,17 +20,27 @@ p{
     margin: 5px 0px;
 }
 .article_sub_title{
-    font-size: 19px;
+    /* font-size: 19px; */
 }
 @media screen and (max-width: 480px){
-    h2 {
+    h1 {
         font-size: 20px;
     }
     p{
-        font-size: 15px;
+        font-size: 14px;
     }
     .article_sub_title{
-        font-size: 16px;
+        font-size: 17px;
     }
-    
+    h3{
+        font-size: 15px;
+    }
+    .main_content {
+        width: 89%;
+    }
+
+    .title_block{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
 }
